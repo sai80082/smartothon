@@ -16,13 +16,12 @@ import Topperforming from "../components/top/Topperforming";
 
 const Dashboard = () => {
   const menus = [
-    { name: "dashboard", link: "/", icon: MdOutlineDashboard },
-    { name: "Leave", link: "/leave", icon: AiOutlineUser, margin: true },
-    { name: "complaint", link: "/complaint", icon: FiMessageSquare },
-    { name: "room details", link: "/roomdetails", icon: TbReportAnalytics },
-    { name: "mess change", link: "/messchange", icon: FiFolder },
-    { name: "course", link: "/course", icon: FiShoppingCart },
-    { name: "events", link: "/events", icon: AiOutlineHeart },
+    { name: "Dashboard", link: "/", icon: MdOutlineDashboard },
+    { name: "Cources", link: "/cources", icon: TbReportAnalytics, margin: true },
+    { name: "Code", link: "/code", icon: FiFolder },
+    { name: "Profile", link: "/profile", icon: AiOutlineUser },
+    { name: "Messages", link: "/message", icon: FiMessageSquare },
+
   ];
 
   return (
