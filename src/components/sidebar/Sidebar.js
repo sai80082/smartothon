@@ -34,22 +34,28 @@ function Sidebar() {
                     src="/iconlylight-outline3-user.svg"
                 />
             </div>
-            <div className="absolute top-[381px] left-[80px] w-[149px] h-[27.4px]">
-                <b className="absolute top-[0px] left-[35px]">Documents</b>
-                <img
+            <a href="https://example.com">
+                <div className="absolute top-[381px] left-[80px] w-[149px] h-[27.4px]">
+                    <b className="absolute top-[0px] left-[35px]">Documents</b>
+                    <img
                     className="absolute h-full w-[16.78%] top-[0%] right-[83.22%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
                     alt=""
                     src="/iconlylight-outlinedocument1.svg"
-                />
-            </div>
-            <div className="absolute top-[465px] left-[80px] w-[147.69px] h-[27.4px]">
-                <b className="absolute top-[0.4px] left-[33.69px]">Bookmarks</b>
-                <img
-                    className="absolute h-[99.96%] w-[15.16%] top-[0%] right-[84.84%] bottom-[0.04%] left-[0%] max-w-full overflow-hidden max-h-full"
-                    alt=""
-                    src="/iconlylight-outlinebookmark.svg"
-                />
-            </div>
+                    />
+                </div>
+            </a>
+            
+            <a href="/code">
+                <div className="absolute top-[465px] left-[80px] w-[147.69px] h-[27.4px]">
+                    <b className="absolute top-[0.4px] left-[33.69px]">Code</b>
+                    <img
+                        className="absolute h-[99.96%] w-[15.16%] top-[0%] right-[84.84%] bottom-[0.04%] left-[0%] max-w-full overflow-hidden max-h-full"
+                        alt=""
+                        src="/iconlylight-outlinebookmark.svg"
+                    />
+                </div>
+            </a>
+
             <div className="absolute top-[549px] left-[80px] w-[171px] h-[27px]">
                 <b className="absolute top-[0px] left-[36.98px]">Messages</b>
                 <img
