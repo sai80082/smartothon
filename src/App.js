@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import { useEffect } from "react";
+import Search from "./components/search/Search";
 
 function App() {
   const action = useNavigationType();
@@ -44,9 +45,12 @@ function App() {
   }, [pathname]);
 
   return (
-    <Routes>
-      <Route path="/" element={<Dashboard />} />
-    </Routes>
+    <>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </>
+
   );
 }
 export default App;
