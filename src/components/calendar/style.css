@@ -1,0 +1,78 @@
+.calendar-container {
+    position: relative;
+    height: 27.15%;
+    width: 21.74%;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #333;
+  }
+  
+  .header-container {
+    position: relative;
+    height: 7.32%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+    background-color: #f7f7f7;
+  }
+  
+  .header-title {
+    font-weight: bold;
+  }
+  
+  .month-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .calendar-icon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: 0.25rem;
+  }
+  
+  .month-title {
+    font-weight: bold;
+  }
+  
+  .days-container {
+    height: 92.68%;
+    border: 1px solid #ccc;
+  }
+  
+  .days-header {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .day {
+    padding: 0.5rem 0;
+  }
+  
+  .dates-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+  }
+  
+  .date {
+    padding: 0.5rem 0;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .hidden {
+    visibility: hidden;
+  }
+  

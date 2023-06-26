@@ -1,24 +1,25 @@
 function Profile() {
     return (
-        <div className="absolute top-[43px] left-[1209px] w-[182px] h-[50px] text-light-primary">
-            <div className="absolute top-[0px] left-[0px] rounded-[10px] bg-aliceblue w-[182px] h-[50px]" />
-            <div className="absolute top-[4.86px] left-[13px] w-[134px] h-[40.29px]">
-                <div className="absolute top-[0px] left-[2.88px] rounded-[9.59px] bg-royalblue w-[42.2px] h-[40.29px]" />
+        <div className="relative w-44 h-12 text-light-primary">
+            <div className="top-0 left-0 rounded-lg bg-aliceblue w-full h-full" />
+            <div className="top-1 left-3 w-36 h-9">
+                <div className="absolute top-0 left-1 rounded-lg bg-royalblue w-11 h-full" />
                 <img
-                    className="absolute top-[0px] left-[0px] rounded-[9.59px] w-[47px] h-[40.29px] object-cover"
+                    className="absolute top-0 left-0 rounded-lg w-12 h-full object-cover"
                     alt=""
                     src="/allura-avatar@2x.png"
                 />
-                <div className="absolute top-[12.14px] left-[57px] tracking-[-0.03em] font-semibold">
+                <div className="absolute top-3 left-14 tracking-tight font-semibold">
                     Adeola Ayo
                 </div>
             </div>
             <img
-                className="absolute top-[21px] right-[12px] w-3 h-3"
+                className="absolute top-6 right-3 w-3 h-3"
                 alt=""
                 src="/icon--chevron-left.svg"
             />
         </div>
     );
 }
+
 export default Profile;

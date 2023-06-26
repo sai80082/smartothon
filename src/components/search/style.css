@@ -3,7 +3,6 @@
     line-height: 28px;
     align-items: center;
     position: relative;
-    max-width: 190px;
 }
 
 .input {
@@ -27,9 +26,9 @@
 .input:focus,
 input:hover {
     outline: none;
-    border-color: rgba(234, 76, 137, 0.4);
+    border-color: rgba(84, 124, 255, 0.753);
     background-color: #fff;
-    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+    box-shadow: 0 0 0 4px rgba(62, 74, 237, 0.1);
 }
 
 .icon {

@@ -1,12 +1,15 @@
 function Activity() {
     return (
-        <div className="absolute top-[475px] left-[1087px] w-[331px] h-[527px] text-center text-6xl text-light-selected">
-            <b className="absolute top-[0px] left-[0px] text-xl text-light-primary">
-                Upcoming Activities
-            </b>
-            <b className="absolute top-[7px] left-[259px] text-smi text-royalblue">
-                See all
-            </b>
+        <div className="relative w-[331px] h-[527px] text-center text-6xl text-light-selected">
+            <div className="flex justify-around align-middle justify-self-center justify-items-center">
+                <span className="text-xl text-light-primary">
+                    Upcoming Activities
+                </span>
+                <span className="text-smi text-royalblue">
+                    See all
+                </span>
+            </div>
+
             <div className="absolute top-[177px] left-[0px] w-[313px] h-[100px]">
                 <div className="absolute top-[0px] left-[0px] rounded-xl bg-lavenderblush w-[313px] h-[100px]" />
                 <img
