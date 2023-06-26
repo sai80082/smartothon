@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Dashboard from "./pages/Dashboard";
 import Code from "./components/code/Code";
+import Login from "./components/login/Login";
 import { useEffect } from "react";
 import Search from "./components/search/Search";
 
@@ -50,6 +51,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Dashboard />} />
         <Route path="/code" element={<Code />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </>
 
