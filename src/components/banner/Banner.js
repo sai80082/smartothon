@@ -1,9 +1,9 @@
 function Banner() {
     return (
-        <div className=" h-[175px] text-light-selected bg-royalblue rounded-xl flex justify-between">
+        <div className="text-light-selected bg-royalblue rounded-xl flex justify-between w-full">
             <div className="flex flex-col pl-11 pt-11">
-                <div className=" h-[53px] text-[35px]">
-                    <b className="   h-[53px]">
+                <div className=" lg:h-[53px] text-xl">
+                    <b >
                         Welcome back, Ayo
                     </b>
                     <img
@@ -22,7 +22,7 @@ function Banner() {
                 </div>
             </div>
             <img
-                className="h-[203.08px] object-cover"
+                className="lg:h-[203.08px] h-[100px] object-cover"
                 alt=""
                 src="/humaaans-space@2x.png"
             />

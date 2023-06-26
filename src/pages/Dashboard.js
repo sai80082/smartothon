@@ -1,3 +1,8 @@
+import React from "react";
+import { MdOutlineDashboard } from "react-icons/md";
+import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
+import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
+import { TbReportAnalytics } from "react-icons/tb";
 import Activity from "../components/activity/Activity";
 import Banner from "../components/banner/Banner";
 import Calendar from "../components/calendar/Calendar";
@@ -8,48 +13,47 @@ import Progress from "../components/progress/Progress";
 import Search from "../components/search/Search";
 import Sidebar from "../components/sidebar/Sidebar";
 import Topperforming from "../components/top/Topperforming";
-import { FiMessageSquare, FiFolder, FiShoppingCart } from "react-icons/fi";
-import { AiOutlineUser, AiOutlineHeart } from "react-icons/ai";
-import { MdOutlineDashboard } from "react-icons/md";
-import { TbReportAnalytics } from "react-icons/tb";
 
 const Dashboard = () => {
   const menus = [
-    { name: "Dashboard", link: "/", icon: MdOutlineDashboard },
-    { name: "Cources", link: "/cources", icon: TbReportAnalytics, margin: true },
-    { name: "Code", link: "/code", icon: FiFolder },
-    { name: "Profile", link: "/profile", icon: AiOutlineUser },
-    { name: "Messages", link: "/message", icon: FiMessageSquare },
+    { name: "dashboard", link: "/", icon: MdOutlineDashboard },
+    { name: "Leave", link: "/leave", icon: AiOutlineUser, margin: true },
+    { name: "complaint", link: "/complaint", icon: FiMessageSquare },
+    { name: "room details", link: "/roomdetails", icon: TbReportAnalytics },
+    { name: "mess change", link: "/messchange", icon: FiFolder },
+    { name: "course", link: "/course", icon: FiShoppingCart },
+    { name: "events", link: "/events", icon: AiOutlineHeart },
   ];
 
   return (
-    <div className="relative bg-light-selected w-full  text-left text-mini text-gray font-open-sans">
+    <div className="bg-light-selected w-[90%] text-mini text-gray font-open-sans">
+      <div className="flex w-full">
+        <Sidebar dataarr={menus} />
 
-      <div className="flex">
-        <Sidebar dataarr={menus}></Sidebar>
-        <div className="xl:flex">
-          <div className="flex flex-col px-8">
-            <Search></Search>
-            <Banner></Banner>
-            <div className="lg:flex pt-8 justify-around">
-              <Graph></Graph>
-              <Progress></Progress>
+        <div className="xl:flex w-full gap-5 ">
+          <div className="flex flex-col ">
+            <Search />
+            <Banner />
+            <div className="lg:flex pt-8  ">
+              <Graph />
+              <div className="w-full flex justify-center mt-8"> 
+              <Progress />
+              </div>
             </div>
-            <div className="flex">
-              <Topperforming></Topperforming>
-              <Messaages></Messaages>
+            <div className="lg:flex w-full mt-10">
+              <div className="w-full flex justify-center"><Messaages /></div>
+              <Topperforming />
             </div>
           </div>
 
-          <div className="flex flex-col">
-
-            <Calendar></Calendar>
-            <Activity></Activity>
+          <div className="flex flex-col w-full mt-10">
+            <div className="w-full flex justify-center">
+              <Calendar />
+            </div>
+            <Activity />
           </div>
         </div>
-
       </div>
-
     </div>
   );
 };

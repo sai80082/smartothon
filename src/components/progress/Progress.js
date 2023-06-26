@@ -10,11 +10,11 @@ function Progress() {
     const offset = circumference - (percentage / 100) * circumference;
 
     return (
-        <div className=" w-[273px] h-[330px] text-3xs text-light-primary">
-            <b className="text-xl">Completion Progress</b>
-            <div className="cards">
+        <div className="w-[90%] text-3xs text-light-primary lg:w-[350px]">
+            <div className="text-xl my-8 lg:my-0 font-bold">Completion Progress</div>
+            <div className="cards w-full">
                 <div className="card red">
-                    <div className="w-[219.26px] h-[58.26px] flex justify-around justify-items-center items-center">
+                    <div className="w-full h-[58.26px] flex justify-around justify-items-center items-center">
                         <div className="flex flex-col  items-start">
                             <span className="text-[18px] font-bold">Life Contingency</span>
                             <span className="text-[10px] text-white">Chapter 3</span>
