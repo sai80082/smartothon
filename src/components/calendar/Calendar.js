@@ -2,7 +2,7 @@
 function Calendar() {
     return (
 
-        <div class="flex  rounded-2xl">
+        <div class="flex rounded-2xl">
             <div class="max-w-[330px] w-full shadow-lg rounded-2xl ">
                 <div class="md:p-8 p-5 dark:bg-gray-800 bg-whtie rounded-t rounded-2xl">
                     <div class="px-4 flex items-center justify-between">
